@@ -1,0 +1,138 @@
+/*We remove the default margins and padding to define the size of each element ourselves.*/
+*{ 
+    margin:0;
+    padding:0;
+    font-weight: normal;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth; /**ajout un effet au scroll vers les a ()*/
+}
+
+
+/***header ***/
+header {
+    border:1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 5px;
+
+}
+
+header>div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header div div img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+header div p {
+    color:#4B570D;
+    font-weight: bold;
+    justify-content: flex-end;
+    margin-top: 5px;
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none; 
+}
+
+header nav ul li{
+    margin-right: 10px;
+}
+
+header nav ul a{
+    text-decoration: none;
+    color: #4B570D;
+}
+header nav ul li:nth-child(4) {
+    color: #683614; /* Couleur marron */
+}
+/******************************************FIN HEADER*************************************************************/
+
+
+body {
+    background-color: #FFF7EE;
+}
+
+main{
+    
+}
+
+
+
+/***footer****/
+footer{
+    display: flex;
+    flex-direction: column;
+    color: #4B570D;
+    height: ;ght: 100P;
+}
+
+footer div {
+    display: flex;
+    justify-content: cente;
+}
+footer div img {
+    width: 24px;
+    height: 24px;
+    margin-right: 0px;
+    margin-left: 0px;
+    justify-content: center;
+}
+footer section{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 80%;
+    
+    
+}
+
+footer section:nth-of-type(2) {
+    
+    align-items: center;
+    justify-content: center;
+}
+footer section:nth-of-type(2) ul{
+display: flex;
+flex-wrap: wrap;
+}
+footer section:nth-of-type(2) ul li{
+    padding: 10px;
+    }                                            
+footer ul a {
+    text-decoration: none;
+}
+
+footer ul{
+    list-style: none;
+    flex-wrap: wrap;
+    
+}
+#logoshoes{
+    width: 24px;
+    height: 24px;
+}
+
+footer section div{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
