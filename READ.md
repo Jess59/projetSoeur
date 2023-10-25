@@ -10,7 +10,7 @@ Couleur bouton hover: #FF5C24
 
 TYPO
 
-H1: Yeseva One Regular 54
+H1: Yeseva One Regular 54 
 H2: Raleway Regular 25
 Paragraph: Raleway Regular 16
 Header: Raleway Semi Bold 16

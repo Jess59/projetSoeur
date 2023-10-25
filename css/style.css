@@ -5,88 +5,241 @@
     font-weight: normal;
     box-sizing: border-box;
 }
-
 html{
     scroll-behavior: smooth; /**ajout un effet au scroll vers les a ()*/
 }
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/*******************************************************FONT*******************************************/
+@font-face {
+    font-family: 'yesevaOne';
+    src: url('../fonts/YesevaOne-Regular.eot');
+    src: url('../fonts/YesevaOne-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/YesevaOne-egular.woff2') format('woff2'),
+        url('../fonts/YesevaOne-Regular.woff') format('woff'),
+        url('../fonts/YesevaOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
+@font-face {
+    font-family: 'ralewayThin';
+    src: url('../fonts/Raleway-Thin.eot');
+    src: url('../fonts/Raleway-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Raleway-Thin.woff2') format('woff2'),
+        url('../fonts/Raleway-Thin.woff') format('woff'),
+        url('../fonts/Raleway-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
 
-/***header ***/
+@font-face {
+    font-family: 'ralewayBold';
+    src: url('../fonts/Raleway-Bold.eot');
+    src: url('../fonts/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Raleway-Bold.woff2') format('woff2'),
+        url('../fonts/Raleway-Bold.woff') format('woff'),
+        url('../fonts/Raleway-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'RalewayLight';
+    src: url('../fonts/Raleway-Light.eot');
+    src: url('../fonts/Raleway-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Raleway-Light.woff2') format('woff2'),
+        url('../fonts/Raleway-Light.woff') format('woff'),
+        url('../fonts/Raleway-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'ralewayRegular';
+    src: url('../fonts/Raleway-Regular.eot');
+    src: url('../fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Raleway-Regular.woff2') format('woff2'),
+        url('../fonts/Raleway-Regular.woff') format('woff'),
+        url('../fonts/Raleway-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'ralewaySemiBold';
+    src: url('../fonts/Raleway-SemiBold.eot');
+    src: url('../fonts/Raleway-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Raleway-SemiBold.woff2') format('woff2'),
+        url('../fonts/Raleway-SemiBold.woff') format('woff'),
+        url('../fonts/Raleway-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+/************************************FIN FONT*********************************************/
+
+/******************************************HEADER************************************/
 header {
     border:1px solid black;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 5px;
-
+    align-items: center;
+    height: 70px;
 }
-
 header>div {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
-
-header div div img {
+header div img {
     width: 24px;
     height: 24px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin: 0 10px;
 }
-
 header div p {
     color:#4B570D;
     font-weight: bold;
     justify-content: flex-end;
     margin-top: 5px;
+    font-family: yesevaOne;
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: capitalize;
 }
 header nav ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none; 
 }
-
 header nav ul li{
     margin-right: 10px;
 }
-
 header nav ul a{
     text-decoration: none;
     color: #4B570D;
 }
-header nav ul li:nth-child(4) {
+header nav ul li:nth-child(4) {/***petit trait */
     color: #683614; /* Couleur marron */
+}
+header nav ul li:last-of-type img{
+    height: 20px;
 }
 /******************************************FIN HEADER*************************************************************/
 
+/****************************************DEBUT BODY******************************************/
 
 body {
     background-color: #FFF7EE;
+    height: 100vh;
 }
-
-main{
-    
-}
-
-
-
-/***footer****/
-footer{
+.texte{
+    width:50%;
     display: flex;
     flex-direction: column;
-    color: #4B570D;
-    height: ;ght: 100P;
-}
-
-footer div {
-    display: flex;
-    justify-content: cente;
-}
-footer div img {
-    width: 24px;
-    height: 24px;
-    margin-right: 0px;
-    margin-left: 0px;
     justify-content: center;
+    align-items: flex-start;
+}
+.texte h1 {
+    color: #4b570d;
+    margin-bottom: 5px;
+    
+}
+.texte h1::first-line{
+    color: #c68d5e;
+}
+.texte h2 {
+    margin-bottom: 10px;
+    
+}
+.texte a{
+    color: #FFF7EE;
+    background-color: #DC5527;
+    border-radius: 50px;
+    padding: 10px 20px;
+    display: inline-block;
+   }
+.texte a:hover{
+    background-color: #FF5C24;
+}
+/***********************************************DEBUT*********************************************/
+/******************************************DEBUT SECTION 1********************************/
+main section:nth-of-type(1) {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid;
+}
+main section:nth-of-type(1) div img {
+    height: 60vw;
+    max-height:600px;  
+    margin-top: 20px;
+}
+.soeureinement::first-line{
+    color: #4B570D;
+    font-size: 54px;
+}
+/******************************************FIN SECTION 1********************************/
+/******************************************DEBUT SECTION 2********************************/
+main section:nth-of-type(2){
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+main section:nth-of-type(2) img {
+    height: 60vw;
+    max-height:600px;  
+}/*********FIN SECTION 2******************/
+/*********DEBUT SECTION 3****************/
+
+main section:nth-of-type(3){
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+main section:nth-of-type(3) img {
+    height: 60vw;
+    max-height: 600px;
+    margin-bottom:20px;
+
+
+    
+}
+/******************************************FIN SECTION 2********************************/
+/******************************************DEBUT focus********************************/
+.focus{
+    width: 80%;
+    padding: 50px;
+    background:mistyrose;
+    margin:0 auto;
+    border-radius: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.focus>div:first-of-type{
+    width:50%;
+    height:200px;
+    overflow: hidden;
+}
+.focus div img{
+    width:100%;
+}
+footer{
+    display: flex;
+    padding: 50px 0;
+    flex-direction: column;
+    color: #4B570D;
 }
 footer section{
     display: flex;
@@ -94,45 +247,46 @@ footer section{
     flex-wrap: wrap;
     align-items: center;
     width: 80%;
-    
-    
+    margin: 0 auto;
 }
-
+footer section div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer div img {
+    width: 24px;
+    height: 24px;
+    justify-content: center;
+}
 footer section:nth-of-type(2) {
-    
     align-items: center;
     justify-content: center;
 }
 footer section:nth-of-type(2) ul{
 display: flex;
 flex-wrap: wrap;
+align-items: center;
 }
 footer section:nth-of-type(2) ul li{
     padding: 10px;
-    }                                            
-footer ul a {
-    text-decoration: none;
-}
-
+}                                            
 footer ul{
     list-style: none;
     flex-wrap: wrap;
-    
 }
 #logoshoes{
     width: 24px;
     height: 24px;
 }
 
-footer section div{
-    display: flex;
-    flex-direction: column;
+
+
+
+/***********MAP*******/
+.map { 
+
+    justify-content: center;
+    align-items: center;
+   height: "30vw";
 }
-
-
-
-
-
-
-
-
