@@ -4,62 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=
     , initial-scale=1.0">
-    <title>Connexion</title>
-    <link rel="stylesheet" href="/css/style.css">
-</head> 
+    <title>Soeureinement</title>
+    <link rel="stylesheet" href="/css/connexion.css">
+    <link href="/img/logoSoeur.png" type="image/x-icon" rel="soeur icon" >
+</head>
 <body>
     <!---------------------------------------------------"BEGINNING OF HEADER"-------------------------------------------->
     <header>
-        <div>       
-            <img src="/img/logoSoeur.png" alt="logo Soeureinement"> 
+        <div>
+            <img src="/img/logoSoeur.png" alt="logo Soeureinement">
             <p>soeureinement</p>
         </div>
-            <nav>
+        <nav>
                 <ul>
-                    <li><a href="#">Acceuil</a></li>
-                    <li><a href="#">Nos randonnées</a></li>
-                    <li><a href="#">Conseils</a></li>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="/pages/cataRando.html">Nos randonnées</a></li>
+                    <li><a href="/pages/conseils.html">Conseils</a></li>
                     <li>|</li>
-                    <li><a href="#connexion.html"><img src="/icones/icoConex.png" alt="Connexion"></a></li>
+                    <li><a href="/pages/connexion.html"><img src="/icones/icoConex.png" alt="#Connexion"></a></li>
                 </ul>
-                
-            </nav>
+        </nav>
     </header>
     <!------------------------------------------------------"END OF HEADER."------------------------------------------------>
     <!---------------------------------------------------"BEGINNING OF  MAIN"-------------------------------------------->
-    <main id="mainConex">
+    <main>
         
        <section>
-        <div id="">
+
+            <div id="conInsc">
 
             <!------------------------------------Titre de la page-------------------------------------------------------->
-            <h1 class="soeureinement">Je me connecte</h1><!--J'ai ajouté la class texte à H1-->
+            <h1 class="h1Connexion">Je me connecte</h1>
             <!--Formulaire de connexion-->
-            <form id="formConnex" connex="Login">
+            <form id="formConnex" connex="Login" class="formConnexion">
                 <input  placeholder="E-mail" type="email" id="mailConnex" name="mailConnnex" value="">
                <input placeholder="Mot de passe" type="password" id="mdpConnex" name="mdpConnnex" value="" minlength="4" maxlength="12"><br> <br>
                 <!--maxlenght limite notre aassword à 12 characteres et préviens l'injection de code malveillant
                 <boutton type="submit">Sign in</boutton>    plus facile à styler les buttons que le input-->
-                <input type="submit" value="Se connecter"><br>
+                <input type="submit" value="Se connecter">
             </form>
             <!----------------------------------Lien à la page Modifier mot de passe---------------------------------------->
-                <a href="/pages/changeMdp.html">Modifier mot de passe</a>
+                <a class="modifMdp" href="/pages/changeMdp.html">Modifier mot de passe</a>
+                
                 <hr>
-                <br>
+                
                 <p>Je n'ai pas encore de compte?</p><br>
                 <!-------------------Button clicable qui deploie le formulaire d'insciption au clic-------------------------->
                 <button id="montreFormInsc">Je m'inscris</button>
-                <br>
+                
             <!-----------------------------------Formularire d'inscription caché jusqu'au clic------------------------------->
-             <form id="inscription"; signUp="inscription"><br>
-                <input placeholder="Prenom" class="formInsc" type="text" id="prenomInsc" name="prenomInsc" value="">
-                <input placeholder="Nom" class="formInsc" type="text" id="nomInsc" name="nomInsc" value="">
-                <input placeholder="Nickname" class ="formInsc" type="text" id="nickInsc" name="nickInsc" value="">
-                <input placeholder="Mot de pass" class="formInsc" type="password" id="mdpInsc" name="mdpInsc" value="" minlength="4" maxlength="12"><br> <br>
+             <form id="inscription"; signUp="inscription">
+                <input placeholder="Prenom" type="text" id="prenomInsc" name="prenomInsc" value="">
+                <input placeholder="Nom" type="text" id="nomInsc" name="nomInsc" value="">
+                <input placeholder="Nickname" type="text" id="nickInsc" name="nickInsc" value="">
+                <input placeholder="Mot de pass" type="password" id="mdpInsc" name="mdpInsc" value="" minlength="4" maxlength="12"><br> <br>
                 <label for="birth">Date de naissance (+18ans)</label><br><br>
                 <input type="date" id="idDate" name="nameDate" value="" min="1933-01-01" max="2004-01-01"/><br><br>
-                <input type="submit" value="S'inscrire">
+                <button id="sInscrire">S'inscrire</button> <!---input type="submit" value="S'inscrire">-->
              </form>
+            </div>
 
              
         <figure id="imgConnex">
@@ -72,42 +75,42 @@
         <section>
             <div>
                 <img src="/img/logoSoeur.png" alt="logo Soeureinement">
-                <p>soeureinement</p>
+                <p>Soeureinement</p>
             </div>
             <ul>
-                <li>nos randonnées<a href="#"></a></li>
-                <li>facile<a href="#"></a></li>
-                <li>moyen<a href="#"></a></li>
-                <li>difficile<a href="#"></a></li>
+                <li class="firstLiFooter"><a href="/pages/cataRando.html">Nos randonnées</a></li>
+                <li><a href="#"></a>Facile</li>
+                <li><a href="#"></a>Moyen</li>
+                <li><a href="#"></a>Difficile</li>
             </ul>
             <ul>
-                <li>nos conseils <a href="#"></a></li>
-                <li>equipements<a href="#"></a></li>
-                <li>santé<a href="#"></a></li>
-                <li>tous les conseils<a href="#"></a></li>
+                <li class="firstLiFooter"><a href="/pages/conseils.html">Nos conseils</a></li>
+                <li><a href="pages/conseils.html">Equipements</a></li>
+                <li><a href="pages/conseils.html">Santé</a></li>
+                <li><a href="pages/conseils.html">Tous les conseils</a></li>
             </ul>
             <ul>
-                <li>soeureinement<a href="#"></a></li>
-                <li>contact<a href="#"></a></li>
+                <li class="firstLiFooter"><a href="#">Soeureinement</a></li>
+                <li><a href="#">Contact</a></li>
                 <li><a href="/pages/connexion.html">Se connecter</a></li>
-                <li>s'inscrire<a href="#"></a></li>
+                <li><a href="/pages/inscription.html">S'inscrire</a></li>
             </ul>
             <ul>
-                <li>nous suivre</li>
-                <li><img src="/icones/icoInsta.png" alt=""><a href="#"></a></li>
+                <li class="firstLiFooter">Nous suivre</li>
+                <li id="NousSuivre"><a href="https://www.instagram.com/soeureinement/" target="_blank"><img src="/icones/icoInsta.png" alt=""></a></li>
             </ul>
         </section>
         <section>
             <ul>
-                <li><a href="#"></a>mentions légales</li>
-                <li><a href="#"></a>cgu</li>
-                <li><a href="#"></a>design by hidden figures</li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="#">CGU</a></li>
+                <li ><a href="#">Design by hidden figures</a></li>
                 <li>
                     <img id="logoshoes" src="/icones/shoes.png" alt=""> <a href="#"></a>
                 </li>
             </ul>
         </section>
     </footer>
-    <script src="/js/script.js"></script>
+    <script src="/js/connexion.js"></script>
 </body>
 </html>

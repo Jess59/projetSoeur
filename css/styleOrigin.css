@@ -1,4 +1,5 @@
-*{
+/*We remove the default margins and padding to define the size of each element ourselves.*/
+*{ 
     margin:0;
     padding:0;
     font-weight: normal;
@@ -14,6 +15,7 @@ a{
 ul{
     list-style: none;
 }
+
 p{
     color:#683614 ;
 }
@@ -29,6 +31,7 @@ p{
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'ralewayThin';
     src: url('../fonts/Raleway-Thin.eot');
@@ -40,6 +43,7 @@ p{
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'ralewayBold';
     src: url('../fonts/Raleway-Bold.eot');
@@ -85,6 +89,7 @@ p{
     font-display: swap;
 }
 /************************************FIN FONT*********************************************/
+
 /******************************************HEADER************************************/
 header {
     display: flex;
@@ -100,8 +105,8 @@ header>div {
     align-items: center;
 }
 header div img {
-    width: 30px;
-    height:30px;
+    width: 24px;
+    height: 24px;
     margin: 0 10px;
 }
 header div p {
@@ -110,21 +115,19 @@ header div p {
     justify-content: flex-end;
     margin-top: 5px;
     font-family: yesevaOne;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: normal;
     text-transform: capitalize;
 }
 header nav ul {
-    margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
-    list-style: none;
+    list-style: none; 
 }
 header nav ul li{
     margin-right: 45px;
 }
 header nav ul a{
-    font-size: 16px;
     text-decoration: none;
     color: #4B570D;
 }
@@ -136,6 +139,7 @@ header nav ul li:last-of-type img{
 }
 /******************************************FIN HEADER*************************************************************/
 /****************************************DEBUT BODY******************************************/
+
 body {
     background-color: #FFF7EE;
     height: 100vh;
@@ -146,15 +150,20 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin: 5px;
+    
 }
-h4 {
-    color: #C68D5E;
+.texte h1 {
+    color: #4b570d;
+    margin-bottom: 5px;
     padding: 20px;
-    font-size: 25px;
+    font-size: 54px;  
+}
+.texte h1::first-line{
+    color: #c68d5e;
 }
 .texte h2 {
     margin-bottom: 10px;
+    
 }
 .texte a{
     color: #FFF7EE;
@@ -166,17 +175,6 @@ h4 {
 .texte a:hover{
     background-color: #FF5C24;
 }
-.firstLineTitle{
-    color: #C68D5E;
-    font-size: 40px;
-    /* text-indent:-5% ; */
-    }
-.secondLineTitle{
-         color: #4B570D;
-        margin-bottom: 5px;
-        padding: 20px;
-        font-size: 60px;
-    }
 /***********************************************DEBUT*********************************************/
 /******************************************DEBUT SECTION 1********************************/
 main section:nth-of-type(1) {
@@ -185,7 +183,7 @@ main section:nth-of-type(1) {
 }
 main section:nth-of-type(1) div img {
     height: 60vw;
-    max-height:600px;
+    max-height:600px;  
     margin-top: 20px;
 }
 .soeureinement::first-line{
@@ -205,11 +203,12 @@ main section:nth-of-type(2){
 main section:nth-of-type(2) img {
     height: 60vw;
     max-height:600px;
-    main section:nth-of-type(2).texte {
+    main section:nth-of-type(2) .texte {
         margin-left: 70px;
     }
 }/***********************FIN SECTION 2**********************/
 /**********************DEBUT SECTION 3****************/
+
 main section:nth-of-type(3){
     display: flex;
     justify-content: space-around;
@@ -218,15 +217,9 @@ main section:nth-of-type(3){
 main section:nth-of-type(3) img {
     height: 60vw;
     max-height: 600px;
-    margin-bottom:20px;
+    margin-bottom:20px; 
 }
-main section a{
-    margin-top: 15px;
-}
-main section p{
-    margin: 10px;
-    line-height: 20px ;
-}
+
 /******************************************FIN SECTION 3********************************/
 /******************************************DEBUT FOCUS********************************/
 .focus{
@@ -242,6 +235,7 @@ main section p{
     overflow: hidden;
 }
 .focus>div:nth-of-type(2){
+
 margin: 0 auto;
 }
 /******************************************FIN FOCUS********************************/
@@ -266,19 +260,13 @@ footer section div{
     align-items: center;
 }
 footer div img {
-    width: 50px;
-    height: 50px;
+    width: 24px;
+    height: 24px;
     justify-content: center;
-    margin-bottom: 10px;
-}
-.firstLiFooter{
-    margin-bottom: 10px;
-    font-weight: bold;
 }
 footer section:nth-of-type(2) {
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
 }
 footer section:nth-of-type(2) ul{
     display: flex;
@@ -287,10 +275,7 @@ footer section:nth-of-type(2) ul{
 }
 footer section:nth-of-type(2) ul li{
     padding: 10px;
-}
-#NousSuivre {
-text-align: center;
-}
+}                                            
 footer ul{
     list-style: none;
     flex-wrap: wrap;
@@ -299,8 +284,107 @@ footer ul{
     width: 24px;
     height: 24px;
 }
-#logoinsta{
-    width: 30px;
-    height: 30px;
-    margin-top: 10px;
+/***********MAP*******/
+.map { 
+
+    justify-content: center;
+    align-items: center;
+   height: "30vw";
 }
+
+/*******************début page Admin**************************************/
+
+#mainAdmin{
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+}
+#formAdmin{
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+#formAdmin h2 {
+    color: #4b570D;
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    
+}
+/****************************MODIF CHAMP TEXTE FORMULAIRE admin*****************************************/
+input[type=text], [type=datetime-local],[type=number], textarea {
+    padding: 12px 20px;
+    display: inline-block;
+    background-color: #FFF3E6;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 1px solid #683614;
+    font-family: "ralewayThin";
+    font-size: 16px;
+    outline: none;
+}
+/****************************FIN MODIF CHAMP TEXTE FORMULAIRE admin*****************************************/
+#formAdmin textarea {
+    height: 150px;
+    width: 635px;
+}
+/****************************MODIF BOUTON SUBMIT FORMULAIRE admin**********************************/
+  input[type=submit] {
+    background-color: #DC5527;
+    color: #FFF3E6;
+    padding: 10px 20px;
+    display: block;
+    width: 20%;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+  input[type=submit]:hover{
+    background-color: #FF5C24;
+}
+/**************************** FIN MODIF BOUTON SUBMIT FORMULAIRE**********************************/
+/************************************FIN ADMIN**************************************/
+/**************** CSS CHANGEMENT MDP***********/
+.h2mdp {
+    color: #4B570D;
+    margin-bottom: 5px;
+    font-size: 40px;
+    font-weight: 100px;
+}
+.formmdp{
+    border :#C68D5E solid;
+    border-width: 2px;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #FFF3E6 ;
+}
+.bouton {
+    color: #FFF7EE;
+    background-color: #DC5527;
+    border-radius: 50px;
+    margin: 10px 20px;
+    padding: 10px 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+   }
+   .formmdp::placeholder {
+    color: #683614;
+}
+main img{
+   margin-right: 100px;
+   margin-bottom: 80px;
+}
+section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#formulairemdp {
+    padding-top:100px;
+    padding-left: 150px;
+}
+/***********************FIN PAGE CHANGEMENT MDP********/
+

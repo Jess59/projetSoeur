@@ -1,0 +1,51 @@
+/*///////////////////////////////////////////////////////////////////CSS/////////////////////////////////////////////////////////////*/
+#mainAdmin{
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+}
+#formAdmin{
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+#formAdmin h2 {
+    color: #4b570D;
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    
+}
+/****************************MODIF CHAMP TEXTE FORMULAIRE*****************************************/
+input[type=text], [type=datetime-local],[type=number], textarea {
+    padding: 12px 20px;
+    display: inline-block;
+    background-color: #FFF3E6;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 1px solid #683614;
+    font-family: "ralewayThin";
+    font-size: 16px;
+    outline: none;
+}
+/****************************FIN MODIF CHAMP TEXTE FORMULAIRE*****************************************/
+#formAdmin textarea {
+    height: 150px;
+    width: 635px;
+}
+/****************************MODIF BOUTON SUBMIT FORMULAIRE**********************************/
+  input[type=submit] {
+    background-color: #DC5527;
+    color: #FFF3E6;
+    padding: 10px 20px;
+    display: block;
+    width: 20%;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+  input[type=submit]:hover{
+    background-color: #FF5C24;
+}
+/**************************** FIN MODIF BOUTON SUBMIT FORMULAIRE**********************************/
+/************************************FIN ADMIN**************************************/

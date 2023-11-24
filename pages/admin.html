@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soeureinement</title>
+    <link rel="stylesheet" href="/css/admin.css">
+    <link href="/img/logoSoeur.png" type="image/x-icon" rel="soeur icon" >
+</head>
+<body>
+    <!---------------------------------------------------"DEBUT HEADER"-------------------------------------------->
+    <header>
+        <div>       
+            <img src="/img/logoSoeur.png" alt="logo Soeureinement" title="Soeureinement"> 
+            <p>soeureinement</p>
+        </div>
+        <nav>
+                <ul>
+                    <li><a href="/index.html">Accueil</a></li>
+                    <li><a href="/pages/cataRando.html">Nos randonnées</a></li>
+                    <li><a href="/pages/conseils.html">Conseils</a></li>
+                    <li>|</li>
+                    <li><a href="/pages/connexion.html"><img src="/icones/icoConex.png" alt="#Connexion"></a></li>
+                </ul>
+                
+        </nav>
+    </header>
+    <!------------------------------------------------------"FIN HEADER."-------------------------------------->
+    <!------------------------------------------------------"DEBUT MAIN."-------------------------------------->
+    <main id="mainAdmin">
+        <form id="formAdmin">
+            <h2>ADMIN</h2>
+            <input placeholder="Nom du circuit:" type="text" id="nameOfCircuit" name="nameOfCircuit" value="" size="70">
+            <br><br>
+            <textarea rows="30" cols="30" placeholder="Information du parcours:"></textarea>
+            <br><br>
+            <input placeholder="Date et Heure du départ:" type="datetime-local" id="DateAndHour" name="DateAndHour" value="" min="2004-01-01" max="1933-01-01" size="70">
+            <br><br>
+            <input placeholder="Atelier bien-être:" type="text" id="Atelier" name="Atelier" value="" size="70">
+            <br><br>
+            <input placeholder="Participantes:" type="number" id="nOfParticipantes" name="nOfParticipantes" min="1" max="10" value="">
+            <br><br>
+            <input type="submit" value="Valider">
+          </form>
+          <figure>
+            <img src="/img/barbapapaAdmin.png" alt="barbapapaAdmin">
+          </figure>
+    </main>
+    <!------------------------------------------------------"FIN MAIN."-------------------------------------->
+    <!--------------------------------------------------"DEBUT FOOTER".----------------------------------------->
+    <footer>
+        <section>
+            <div>
+                <img src="/img/logoSoeur.png" alt="logo Soeureinement">
+                <p>soeureinement</p>
+            </div>
+            <ul>
+                <li><a href="/pages/cataRando.html">nos randonnées</a></li>
+                <li><a href="#"></a>facile</li>
+                <li><a href="#"></a>moyen</li>
+                <li><a href="#"></a>difficile</li>
+            </ul>
+            <ul>
+                <li><a href="/pages/conseils.html">nos conseils</a></li>
+                <li><a href="pages/conseils.html">équipements</a></li>
+                <li><a href="pages/conseils.html">santé</a></li>
+                <li><a href="pages/conseils.html">tous les conseils</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">soeureinement</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="/pages/connexion.html">Se connecter</a></li>
+                <li><a href="/pages/inscription.html">s'inscrire</a></li>
+            </ul>
+            <ul>
+                <li>nous suivre</li>
+                <li><a href="https://www.instagram.com/soeureinement/" target="_blank"><img src="/icones/icoInsta.png" alt=""></a></li>
+                
+            </ul>
+        </section>
+        <section>
+            <ul>
+                <li><a href="#">mentions légales</a></li>
+                <li><a href="#">cgu</a></li>
+                <li><a href="#">design by hidden figures</a></li>
+                <li>
+                    <img id="logoshoes" src="/icones/shoes.png" alt=""> <a href="#"></a>
+                </li>
+            </ul>
+        </section>
+    </footer>
+</body>
+</html>

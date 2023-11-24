@@ -1,0 +1,43 @@
+/****************************PAGE CSS CHANGEMENT MDP*****************************************/
+.h2mdp {
+    color: #4B570D;
+    margin-bottom: 5px;
+    font-size: 40px;
+    font-weight: 100px;
+}
+.formmdp{
+    border :#C68D5E solid;
+    border-width: 2px;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #FFF3E6 ;
+}
+.bouton {
+    color: #FFF7EE;
+    background-color: #DC5527;
+    border-radius: 50px;
+    margin: 10px 20px;
+    padding: 10px 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+   }
+   .formmdp::placeholder {
+    color: #683614;
+}
+main img{
+   margin-right: 100px;
+   margin-bottom: 80px;
+}
+section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#formulairemdp {
+    padding-top:100px;
+    padding-left: 150px;
+}
+/***********************FIN PAGE CHANGEMENT MDP********/
