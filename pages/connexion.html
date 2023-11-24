@@ -16,36 +16,55 @@
         </div>
             <nav>
                 <ul>
-                    <li><a href="#">acceuil</a></li>
-                    <li><a href="#">nos randonnées</a></li>
-                    <li><a href="#">conseils</a></li>
+                    <li><a href="#">Acceuil</a></li>
+                    <li><a href="#">Nos randonnées</a></li>
+                    <li><a href="#">Conseils</a></li>
                     <li>|</li>
-                    <li><a href="/pages/connexion.html"><img src="icones/icoConex.png" alt="#Connexion"></a></li>
+                    <li><a href="#connexion.html"><img src="/icones/icoConex.png" alt="Connexion"></a></li>
                 </ul>
                 
             </nav>
     </header>
     <!------------------------------------------------------"END OF HEADER."------------------------------------------------>
     <!---------------------------------------------------"BEGINNING OF  MAIN"-------------------------------------------->
-    <main>
+    <main id="mainConex">
         
        <section>
-        <div>
-            <h2>Je me connecte</h2>
-            <form name="Login">
-                <label for="mail">Email</label>
-                <input type="email" id="mail" name="param_mail" value="">
-                <label for="pwd">PASSWORD</label>
-                <input type="password" id="pwd" name="para_pwd" value="" minlength="4" maxlength="12">
+        <div id="">
+
+            <!------------------------------------Titre de la page-------------------------------------------------------->
+            <h1 class="soeureinement">Je me connecte</h1><!--J'ai ajouté la class texte à H1-->
+            <!--Formulaire de connexion-->
+            <form id="formConnex" connex="Login">
+                <input  placeholder="E-mail" type="email" id="mailConnex" name="mailConnnex" value="">
+               <input placeholder="Mot de passe" type="password" id="mdpConnex" name="mdpConnnex" value="" minlength="4" maxlength="12"><br> <br>
                 <!--maxlenght limite notre aassword à 12 characteres et préviens l'injection de code malveillant
                 <boutton type="submit">Sign in</boutton>    plus facile à styler les buttons que le input-->
-                <input type="submit" value="Se ceonnecter"><br><br>
-                <label for="changePwd"><a href="/pages/changeMdp.html">Modifier mot de passe</a></label>
+                <input type="submit" value="Se connecter"><br>
             </form>
-        </div>
-        <div>
+            <!----------------------------------Lien à la page Modifier mot de passe---------------------------------------->
+                <a href="/pages/changeMdp.html">Modifier mot de passe</a>
+                <hr>
+                <br>
+                <p>Je n'ai pas encore de compte?</p><br>
+                <!-------------------Button clicable qui deploie le formulaire d'insciption au clic-------------------------->
+                <button id="montreFormInsc">Je m'inscris</button>
+                <br>
+            <!-----------------------------------Formularire d'inscription caché jusqu'au clic------------------------------->
+             <form id="inscription"; signUp="inscription"><br>
+                <input placeholder="Prenom" class="formInsc" type="text" id="prenomInsc" name="prenomInsc" value="">
+                <input placeholder="Nom" class="formInsc" type="text" id="nomInsc" name="nomInsc" value="">
+                <input placeholder="Nickname" class ="formInsc" type="text" id="nickInsc" name="nickInsc" value="">
+                <input placeholder="Mot de pass" class="formInsc" type="password" id="mdpInsc" name="mdpInsc" value="" minlength="4" maxlength="12"><br> <br>
+                <label for="birth">Date de naissance (+18ans)</label><br><br>
+                <input type="date" id="idDate" name="nameDate" value="" min="1933-01-01" max="2004-01-01"/><br><br>
+                <input type="submit" value="S'inscrire">
+             </form>
 
-        </div>
+             
+        <figure id="imgConnex">
+            <img src="/img/photoConnexion2.png" alt="Image connexion un prés vert">
+        </figure>
        </section>
     </main>
     <!---------------------------------------------------"END OF  MAIN"-------------------------------------------->
