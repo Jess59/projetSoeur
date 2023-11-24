@@ -163,21 +163,6 @@ body {
 }
 
 
-h2{
-    color: #4b570d;
-    margin-bottom: 5px;
-    padding: 20px;
-    font-size: 60px;
-    /* text-indent:-10% ; */
-    
-  
-}
-
-h3{
-    color: #c68d5e;
-    font-size: 50px;
-
-}
 
 
 
@@ -203,6 +188,19 @@ h4 {
 .texte a:hover{
     background-color: #FF5C24;
 }
+
+.firstLineTitle{
+    color: #c68d5e;
+    font-size: 40px;
+    /* text-indent:-5% ; */
+    }
+    
+.secondLineTitle{
+         color: #4b570d;
+        margin-bottom: 5px;
+        padding: 20px;
+        font-size: 60px;
+    }
 /***********************************************DEBUT*********************************************/
 /******************************************DEBUT SECTION 1********************************/
 main section:nth-of-type(1) {
@@ -305,7 +303,7 @@ footer div img {
     margin-bottom: 10px;
 }
 
-.firstli{
+.firstLiFooter{
     margin-bottom: 10px;
     font-weight: bold;
 
@@ -348,24 +346,4 @@ footer ul{
     height: 30px;
     margin-top: 10px;
     
-}
-/***********MAP*******/
-
-
-
-#mainMap div{
-
-align-items: center;
-
-
-
-}
-
-
-#mainMap  { 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-   height: "30vw";
 }
